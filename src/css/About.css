@@ -1,26 +1,53 @@
 /* About Section */
 #about {
-    background-image: url('../imgs/about-removebg-preview.png'); /* Path to the image */
-    background-size: contain; /* Ensure the background covers the entire section */
-    background-position: right; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent repeating the image */
-    padding: 60px;
-    color: white; /* Set text color to contrast with the background */
+  background-image: url('../imgs/about-removebg-preview.png'); /* Path to the image */
+  background-size: contain; /* Ensure the background covers the specified area */
+  background-position: top right; /* Position the background image at the top right */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  padding: 60px;
+  color: white; /* Set text color to contrast with the background */
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 100px auto 0; /* Default margin */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  #about {
+    display: flex; /* Enable flexbox on mobile */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: flex-start; /* Align items to the left */
   }
-  
+
+  #about p {
+    margin: 20px auto 0; /* Adjust margin for mobile view */
+  }
+}
+
+/* Laptop Styles */
+@media (max-width: 768px) {
+  #about {
+    background-size: 50%; /* Change to cover for laptops */
+    background-position: top right; /* Keep background position */
+    padding: 60px; /* Optional: Adjust padding for laptop view */
+  }
 
   #about h2 {
-    text-align: center;
-    align-items: center;
-    font-size: 3rem;
-    color: #000000;
-    margin-bottom: 20px;
+    text-align: center; /* Ensure h2 is centered */
+
   }
-  
   #about p {
-    font-size: 1.5rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 100px auto 0; /* Adjust margin for laptops */
   }
-  
+}
