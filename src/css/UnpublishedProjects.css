@@ -1,0 +1,64 @@
+/* Unpublished Projects Page Styles */
+#unpublished-projects {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #f7f2e9 0%, #f4e1b2 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Unpublished Project List */
+.unpublished-project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual Unpublished Project Item */
+.unpublished-project-item {
+    background-color: #fff7e3; /* Slightly different tone */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 400px; /* Adjusted width */
+    flex: 0 1 400px;
+    padding: 20px;
+}
+
+.unpublished-project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image Styling */
+.unpublished-project-item img {
+    width: 100%;
+    height: 300px; /* Increased height for larger images */
+    object-fit: cover;
+    border-bottom: 5px solid #e0cda0; /* A border for a more old-fashioned look */
+}
+
+/* Project Description */
+.unpublished-project-item p {
+    padding: 0 20px;
+    font-size: 1.1rem; /* Adjusted font size */
+    color: #6b4f24;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Link Styling */
+.unpublished-project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #6E260E; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.unpublished-project-item a:hover {
+    background-color: #8B3A2B; /* Darker shade on hover */
+}

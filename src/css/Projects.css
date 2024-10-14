@@ -1,0 +1,111 @@
+/* Old Paper Background */
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #fdf9f3 0%, #f3e5c0 100%);
+  background-color: #fdf9f3;
+}
+
+/* Projects Section Background */
+#projects {
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #fdf6e3 0%, #f4e1b2 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle 3D shadow */
+  border-radius: 10px; /* Slight rounding to soften the section */
+}
+
+/* Project List: 2 projects in a row and one centered */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual Project Item */
+.project-item {
+  background-color: #fff8e1; /* Slightly yellowish tone for project items */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  width: 450px; /* Larger width for project items */
+  flex: 0 1 450px;
+  padding: 20px;
+  border: 1px solid #e0cda0; /* Light border for vintage effect */
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image Styling */
+.project-item img {
+  width: 100%;
+  height: 300px; /* Increased height for larger images */
+  object-fit: cover;
+  border-bottom: 5px solid #e0cda0; /* Old-fashioned border */
+}
+
+/* Project Title */
+.project-item h3 {
+  font-size: 1.8rem;
+  color: #6E260E;
+  margin: 15px 0 10px;
+  font-family: 'Amiri', serif; /* Classic serif font for a traditional look */
+}
+
+/* Project Description */
+.project-item p {
+  padding: 0 20px;
+  font-size: 1.2rem;
+  color: #6b4f24;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Centering Project Item */
+.project-item.center {
+  margin: 0 auto;
+}
+
+/* Make the card responsive */
+@media (max-width: 768px) {
+  .project-item {
+    flex: 0 1 100%;
+  }
+
+  .project-item img {
+    height: 200px;
+  }
+}
+/* Video Link Styling */
+.video-link {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f4e1b2; /* Old paper background for the link */
+  color: #6E260E; /* Dark reddish-brown for the text to match the theme */
+  padding: 12px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 2px solid #e0cda0; /* Light border for a subtle vintage effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  font-family: 'Cairo', sans-serif;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-link:hover {
+  background-color: #fff3d1; /* Slightly lighter background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  color: #49260A; /* Darker text for better contrast when hovered */
+}
+
+.video-link:active {
+  background-color: #e0cda0; /* Active state to provide feedback */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px); /* Subtle movement when clicked */
+}

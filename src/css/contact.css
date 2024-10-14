@@ -1,0 +1,59 @@
+/* Contact Section */
+#contact {
+    padding: 40px 20px;
+    background-color: #f8f1e4; /* Light background color */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading Style */
+  #contact h2 {
+    font-size: 2.5rem;
+    color: #5b3a29; /* Dark brown color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Info Style */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Space between items */
+  }
+  
+  /* Individual Contact Item */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White background for contact items */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width */
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  /* Contact Icon Style */
+  .contact-icon {
+    font-size: 1.5rem; /* Icon size */
+    color: #5b3a29; /* Match icon color with text color */
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  /* Contact Text Style */
+  .contact-text {
+    font-size: 1.2rem; /* Text size */
+    color: #6b4f24; /* Dark brown color for text */
+  }
+  .contact-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+    display: flex; /* Align icon and text */
+    align-items: center; /* Center align vertically */
+  }
+    
